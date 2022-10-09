@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Displacement Scroll</title>
+  <title>Miracle 22</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<script id="vertexShader" type="x-shader/x-vertex">
+  <!-- partial:index.partial.html -->
+  <script id="vertexShader" type="x-shader/x-vertex">
 			precision mediump float;
 			precision mediump int;
 			attribute vec4 color;
@@ -22,7 +24,7 @@
 				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1);
 			}
 </script>
-<script id="fragmentShader" type="x-shader/x-vertex">
+  <script id="fragmentShader" type="x-shader/x-vertex">
 			precision mediump float;
 			precision mediump int;
       uniform float time;
@@ -69,9 +71,11 @@
 			}
 </script>
 
-<div id="loading" class="loading"></div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/95/three.min.js'></script><script  src="./script.js"></script>
+  <div id="loading" class="loading"></div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/95/three.min.js'></script>
+  <script src="./script.js"></script>
 
 </body>
+
 </html>
